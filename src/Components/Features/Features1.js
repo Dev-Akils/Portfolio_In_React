@@ -12,13 +12,15 @@ import six from "../../assets/bootstrap.jpg";
 function Features1() {
   return (
     <>
-      <div className="mx-10 container max-w-screen-lg w-full justify-center text-center items-center">
+    <div className="mx-auto container">
+      <div className="mx-10  justify-center text-center items-center">
         <h2 className="font-bold text-3xl py-4">What I do?</h2>
         <p className="text-lg py-4">
           CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK.
         </p>
       </div>
-      <div className="mx-10 w-full justify-center text-center gap-5 items-start py-3 flex xs:flex-row md:flex-row flex-col overflow-hidden">
+      <div className="mx-auto container w-full">
+      <div className="mx-10  justify-center text-center gap-5 items-start py-3 flex xs:flex-row md:flex-row flex-col overflow-hidden">
         <div className="md:w-1/2 p-3 xs:w-1/2 w-full">
           <img src={devwomen} alt="Dev Woman" className="w-full h-auto" />
         </div>
@@ -34,42 +36,42 @@ function Features1() {
           </p>
           <h2 className="font-bold text-3xl py-3">TECH STACK</h2>
           <div className="gap-3 grid md:grid-cols-3 xs:grid-cols-3 grid-cols-2">
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={one}
                 className="w-full h-full object-cover rounded-full"
                 alt="Image 1"
               />
             </div>
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={two}
                 className="w-full h-full object-cover rounded-full"
                 alt="Image 2"
               />
             </div>
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={three}
                 className="w-full h-full object-cover rounded-full"
                 alt="Image 3"
               />
             </div>
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={four}
                 className="w-full h-full object-cover rounded-full"
                 alt="Image 4"
               />
             </div>
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={five}
                 className="w-full h-full object-cover rounded-full"
                 alt="Image 5"
               />
             </div>
-            <div className="w-[200px] h-[200px] p-2">
+            <div className="w-[150px] h-[150px] p-2">
               <img
                 src={six}
                 className="w-full h-full object-cover rounded-full"
@@ -78,7 +80,7 @@ function Features1() {
             </div>
           </div>
         </div>
-      </div>
+      </div></div></div>
     </>
   );
 }
