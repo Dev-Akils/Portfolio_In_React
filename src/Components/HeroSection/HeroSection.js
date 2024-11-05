@@ -2,6 +2,13 @@ import React from "react";
 import hero from "../../assets/heroback.webp";
 import heroimg from "../../assets/heroimg1.webp";
 function HeroSection() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/AKILA. S.pdf"; // Path to your PDF file
+    link.download = "AKILA. S.pdf"; // Name of the file after download
+    link.click(); // Programmatically click the link
+  };
+
   return (
     <>
       <div className="w-full h-auto">
@@ -18,10 +25,13 @@ function HeroSection() {
                 <br />
                 I'm a React JS Developer
               </h2>
-              <div className="space-y-4 mx-5  self-center md:self-start">
-              <button className="bg-gradient-to-l from-darkPurple to-purple-300 p-2 text-white rounded-lg">
-                My Resume
-              </button>
+              <div className="space-y-4 mx-5 self-center md:self-start">
+                <button
+                  onClick={handleDownload}
+                  className="bg-gradient-to-l from-darkPurple to-purple-300 p-2 text-white rounded-lg inline-block text-center"
+                >
+                  My Resume
+                </button>
               </div>
             </div>
 
