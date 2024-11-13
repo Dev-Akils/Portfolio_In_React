@@ -2,12 +2,17 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from "react-scroll";
 import contact from '../../assets/contact.webp';
+import UseAnimations from "react-useanimations";
+import linkedin from 'react-useanimations/lib/linkedin';
+import facebook from 'react-useanimations/lib/facebook';
+import instagram from 'react-useanimations/lib/instagram'
+
 function Footer() {
   return (
   
     <>
       <div className="w-full h-auto  bg-darkPurple text-[#fff]">
-        <div className="mx-10 my-5 p-5 m-2  grid grid-cols-1 md:grid-cols-3 gap-5 ">
+        <div className="mx-10 my-5 p-14 m-5  grid grid-cols-1 md:grid-cols-3 gap-5 ">
           <div>
             <Link
               to="about"
@@ -20,49 +25,49 @@ function Footer() {
             </Link>
             <div className="flex space-x-4 py-5">
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/gethu_akil"
                 className="bg-blue-600 p-2 rounded-full hover:bg-blue-700"
               >
-                <FaFacebookF />
+                  <UseAnimations animation={facebook} size={40} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://linkedin.com/in/akila-s-02a8ab244"
                 className="bg-blue-400 p-2 rounded-full hover:bg-blue-500"
               >
-                <FaTwitter />
+                <UseAnimations animation={linkedin} size={40} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/gethu_akil/profilecard/?igsh=ZGZxdjVpaG5qNWE="
                 className="bg-pink-600 p-2 rounded-full hover:bg-pink-700"
               >
-                <FaInstagram />
+                  <UseAnimations animation={instagram} size={40} />
               </a>
             </div>
           </div>
           <div>
             <h2 className="text-xl font-bold">Quick Links</h2>
             <ul className="py-5">
-              <Link to="#">
-                <li className="hover:underline py-2">About</li>
+              <Link to="about">
+                <li className="hover:text-[18px] text-[17px] font-medium hover:font-bold py-2 cursor-pointer">About Me</li>
               </Link>
               <Link
-                to="my-creation"
+                to="work"
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-70}
               >
-                <li className="hover:underline py-2">Features</li>
+                <li className="hover:text-[18px] text-[17px] font-medium hover:font-bold py-2 cursor-pointer">My Work</li>
               </Link>
 
               <Link
-                to="contact"
+                to="projects"
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-70}
               >
-                <li className="hover:underline py-2">Projects</li>
+                <li className="hover:text-[18px] text-[17px] font-medium hover:font-bold py-2 cursor-pointer">My Projects</li>
               </Link>
             </ul>
           </div>
@@ -81,7 +86,7 @@ function Footer() {
         <div className="flex  justify-center p-5 my-5 border-t border-[#fff]">
           <p>
             <span className="text-white font-bold">2024 </span>©{" "}
-            {new Date().getFullYear} Sports Club. All Rights Reserved.{" "}
+            {new Date().getFullYear} Akils Portfolio. All Rights Reserved.{" "}
           </p>
         </div>
       </div>

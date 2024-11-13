@@ -4,9 +4,9 @@ import heroimg from "../../assets/heroimg1.webp";
 function HeroSection() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/AKILA. S.pdf"; // Path to your PDF file
-    link.download = "AKILA. S.pdf"; // Name of the file after download
-    link.click(); // Programmatically click the link
+    link.href = "/AKILA. S.pdf";  // Ensure the PDF file is in the public folder
+    link.download = "AKILA. S.pdf";  // Specify the downloaded file name
+    link.click(); // Trigger the download
   };
 
   return (
@@ -23,14 +23,14 @@ function HeroSection() {
               <h2 className="text-3xl font-bold bg-gradient-to-r from-darkPurple to-purple-400 text-transparent bg-clip-text sm:text-4xl lg:text-5xl">
                 Hi! All...
                 <br />
-                I'm a React JS Developer
+                I'm Akila,Working as a React JS Developer.
               </h2>
               <div className="space-y-4 mx-5 self-center md:self-start">
                 <button
-                  onClick={handleDownload}
+                  // onClick={handleDownload}
                   className="bg-gradient-to-l from-darkPurple to-purple-300 p-2 text-white rounded-lg inline-block text-center"
                 >
-                  My Resume
+                 <a href="https://www.naukri.com/mnjuser/homepage"> My Profile</a>
                 </button>
               </div>
             </div>

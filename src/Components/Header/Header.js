@@ -13,7 +13,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 
-import { SlSocialInstagram } from "react-icons/sl";
+import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 import { SlSocialGithub } from "react-icons/sl";
 import { SlSocialLinkedin } from "react-icons/sl";
 import logo from "../../assets/logo.webp";
@@ -72,9 +72,9 @@ export default function Header() {
               justifyContent: "center",
             }}
           >
-            <Typography component="li">Education</Typography>
-            <Typography component="li">Experience</Typography>
-            <Typography component="li">Projects</Typography>
+            <Typography component="li"><a href="#education">Education</a></Typography>
+            <Typography component="li"><a href="#experience">Experience</a></Typography>
+            <Typography component="li"><a href="#projects">Projects</a></Typography>
           </Box>
         </Toolbar>
         <Box display="flex" backgroundColor="white" color="purple" alignItems="center" justifyContent="center" gap={2}>
@@ -82,19 +82,22 @@ export default function Header() {
             color="inherit"
             style={{ fontSize: "18px", fontWeight: "bold" }}
           >
-            <SlSocialInstagram />
+            <a
+                href="https://www.instagram.com/gethu_akil/profilecard/?igsh=ZGZxdjVpaG5qNWE="><SlSocialInstagram /></a>
           </Button>
           <Button
             color="inherit"
             style={{ fontSize: "18px", fontWeight: "bold" }}
           >
-            <SlSocialGithub />
+           <a
+                href="https://facebook.com/gethu_akil"><SlSocialFacebook /></a>
           </Button>
           <Button
             color="inherit"
             style={{ fontSize: "18px", fontWeight: "bold" }}
           >
-            <SlSocialLinkedin />
+           <a
+                href="https://linkedin.com/in/akila-s-02a8ab244"><SlSocialLinkedin /></a>
           </Button>
         </Box>
       </AppBar>
