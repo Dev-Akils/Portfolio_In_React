@@ -25,13 +25,23 @@ function HeroSection() {
                 <br />
                 I'm Akila,Working as a React JS Developer.
               </h2>
-              <div className="space-y-4 mx-5 self-center md:self-start">
+              <div className="flex gap-5 self-center md:self-start">
+              <div>
                 <button
                   // onClick={handleDownload}
                   className="bg-gradient-to-l from-darkPurple to-purple-300 p-2 text-white rounded-lg inline-block text-center"
                 >
                  <a href="https://www.naukri.com/mnjuser/homepage"> My Profile</a>
                 </button>
+                </div>
+                <div>
+                <button
+                   onClick={handleDownload}
+                  className="bg-gradient-to-l from-darkPurple to-purple-300 p-2 text-white rounded-lg inline-block text-center"
+                >
+                  My Resume
+                </button>
+                </div>
               </div>
             </div>
 

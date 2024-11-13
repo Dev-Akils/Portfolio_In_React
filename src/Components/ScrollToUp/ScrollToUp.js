@@ -60,7 +60,7 @@ const buttonStyle = {
     color: 'white',
     border: 'none',
     borderRadius: '50%',
-    padding: '10px',
+    padding: '16px',
     fontSize: '18px',
     cursor: 'pointer',
     zIndex: 1000,
