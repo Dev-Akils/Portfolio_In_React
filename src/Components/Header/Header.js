@@ -19,6 +19,11 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import logo from "../../assets/logo.webp";
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const items = [
+    { text: "Education", href: "#education" },
+    { text: "Experience", href: "#experience" },
+    { text: "Projects", href: "#projects" },
+  ];
 
   const toggleDrawer = (open) => (e) => {
     if (e.type === "keydown" && (e.key === "Tab" || e.key === "Sift")) {
@@ -104,20 +109,21 @@ export default function Header() {
 
       {/* Drawer for small screens */}
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
-        <Box
-          role="presentation"
-          onClick={toggleDrawer(false)}
-          onKeyDown={toggleDrawer(false)}
-          sx={{ width: 250 }}
-        >
-          <List>
-            {["Education", "Experience", "Projects"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-        </Box>
+      <Box>
+      <List>
+        {items.map((item) => (
+          <ListItem button key={item.text}>
+            <ListItemText
+              primary={
+                <Typography component="li">
+                  <a href={item.href}>{item.text}</a>
+                </Typography>
+              }
+            />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
       </Drawer>
     </Box></div>
   );
